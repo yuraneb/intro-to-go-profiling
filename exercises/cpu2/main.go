@@ -7,7 +7,8 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"net/http"
-	"runtime"
+
+	//  "runtime"
 
 	"sync"
 	"time"
@@ -24,9 +25,9 @@ type Options struct {
 	time     int
 }
 
-func Init() {
-	runtime.SetCPUProfileRate(10000)
-}
+// func Init() {
+// 	runtime.SetCPUProfileRate(100000000)
+// }
 
 const URL = "http://api.timezonedb.com/v2.1/get-time-zone"
 
